@@ -1,4 +1,4 @@
-# Zerops x Filament - production setup
+# Zerops x Filament - development setup
 
 WORK IN PROGRESS - development enviroment
 
