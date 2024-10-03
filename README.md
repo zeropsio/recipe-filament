@@ -27,6 +27,8 @@ import dialog in the Zerops app.
 - Proper setup for Laravel **cache**, **optimization**, and **database migrations**
 - Logs set up to use **syslog** and accessible through Zerops GUI
 - Utilization of Zerops built-in **environment variables** system
+- Utilization of Zerops readiness check for proper  **Zero downtime deployment**
+- Utilization of Zerops health check for advanced  **app monitoring**
 
 [//]: # (- [Mailpit]&#40;https://github.com/axllent/mailpit&#41; as **SMTP mock server**)
 [//]: # (- [Adminer]&#40;https://www.adminer.org&#41; for **quick database management** tool)
@@ -35,15 +37,21 @@ import dialog in the Zerops app.
 
 ## Production vs. development
 
-Base of the recipe is ready for production, the difference comes down to:
+Base of the recipe is ready for production. For development purpose setup check [Filament development setup](https://github.com/zeropsio/recipe-filament/tree/devenv)
 
-- Use highly available version of the PostgreSQL database (change `mode` from `NON_HA` to `HA` in recipe YAML, `db`
-  service section)
-- Use at least two containers for Jetstream service to achieve high reliability and resilience (add `minContainers: 2`
-  in recipe YAML, `app` service section)
-- Use production-ready third-party SMTP server instead of Mailpit (change `MAIL_` secret variables in recipe YAML `app`
-  service)
-- Disable public access to Adminer or remove it altogether (remove service `adminer` from recipe YAML)
+[//]: # (- Use highly available version of the PostgreSQL database &#40;change `mode` from `NON_HA` to `HA` in recipe YAML, `db`)
+
+[//]: # (  service section&#41;)
+
+[//]: # (- Use at least two containers for Jetstream service to achieve high reliability and resilience &#40;add `minContainers: 2`)
+
+[//]: # (  in recipe YAML, `app` service section&#41;)
+
+[//]: # (- Use production-ready third-party SMTP server instead of Mailpit &#40;change `MAIL_` secret variables in recipe YAML `app`)
+
+[//]: # (  service&#41;)
+
+[//]: # (- Disable public access to Adminer or remove it altogether &#40;remove service `adminer` from recipe YAML&#41;)
 
 <br/>
 
@@ -54,12 +62,12 @@ took:
 
 - Add [zerops.yml](https://github.com/zeropsio/recipe-filament/blob/main/zerops.yml) to your repository, our
   example includes idempotent migrations, caching, and optimized build process
-- Setup health check. From Laravel 11 is by default setup by framework.
-- Add [league/flysystem-aws-s3-v3](https://github.com/zeropsio/recipe-filament/blob/main/composer.json#L14) to
+- Setup health check if needed. Health checks are enabled out of the box in Laravel 11.
+- Add [league/flysystem-aws-s3-v3](https://github.com/zeropsio/recipe-filament/blob/main/composer.json#L23) to
   your composer.json to support Object Storage file system
 - Utilize
-  Zerops [environment variables](https://github.com/zeropsio/recipe-filament/blob/main/zerops.yml#L25-L75)
-  and [secrets](https://github.com/zeropsio/recipe-filament/blob/main/zerops-project-import.yml#L12-L16) to
+  Zerops [environment variables](https://github.com/zeropsio/recipe-filament/blob/main/zerops.yml#L22-L73)
+  and [secrets](https://github.com/zeropsio/recipe-filament/blob/main/zerops-project-import.yml#L13-L14) to
   setup S3 for file system, Redis for cache and sessions, and trusted proxies to work with reverse proxy load balancer
 
 <br/>
