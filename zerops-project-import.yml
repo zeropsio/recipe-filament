@@ -3,7 +3,7 @@ project:
   name: recipe-filament
   tags:
     - zerops-recipe
-    - production
+    - development
 
 services:
   - hostname: app
