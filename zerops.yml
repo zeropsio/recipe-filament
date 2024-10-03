@@ -20,9 +20,9 @@ zerops:
       os: ubuntu
       siteConfigPath: site.conf.tmpl
       envVariables:
-        APP_NAME: ZeropsFilamentProduction
-        APP_DEBUG: false
-        APP_ENV: production
+        APP_NAME: ZeropsFilamentDevelopment
+        APP_DEBUG: true
+        APP_ENV: development
         APP_LOCALE: en
         APP_FAKER_LOCALE: en_US
         APP_FALLBACK_LOCALE: en

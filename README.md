@@ -31,7 +31,7 @@ import dialog in the Zerops app.
 - Utilization of Zerops health check for advanced  **app monitoring**
 - [Mailpit](https://github.com/axllent/mailpit) as **SMTP mock server**
 - [Adminer](https://www.adminer.org) for **quick database management** tool
-- [S3browser](https://github.com/zeropsio/s3browser) for **quick S3 storage** testing and browsing
+- [S3browser](https://github.com/zeropsio/s3browser) for quick **S3 storage browsing** and testing 
 
 <br/>
 
