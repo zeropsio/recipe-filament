@@ -2,7 +2,7 @@
 
 return [
 
-     'proxies' => '*',
+    'proxies' => '*',
 
     /*
      * Which headers to use to detect proxy related data (For, Host, Proto, Port)
