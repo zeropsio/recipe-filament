@@ -6,6 +6,7 @@ WORK IN PROGRESS - production enviroment
 icludes all the advanced functionality — session and cache
 stored in Redis and files stored in Object Storage, this makes it perfectly suitable for production of any size.
 
+![s3browser](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-filament.svg)
 <br/>
 
 ## Deploy on Zerops
