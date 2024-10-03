@@ -29,15 +29,15 @@ import dialog in the Zerops app.
 - Utilization of Zerops built-in **environment variables** system
 - Utilization of Zerops readiness check for proper  **Zero downtime deployment**
 - Utilization of Zerops health check for advanced  **app monitoring**
-
-[//]: # (- [Mailpit]&#40;https://github.com/axllent/mailpit&#41; as **SMTP mock server**)
-[//]: # (- [Adminer]&#40;https://www.adminer.org&#41; for **quick database management** tool)
+- [Mailpit](https://github.com/axllent/mailpit) as **SMTP mock server**
+- [Adminer](https://www.adminer.org) for **quick database management** tool
+- [S3browser](https://github.com/zeropsio/s3browser) for **quick S3 storage** testing and browsing
 
 <br/>
 
 ## Production vs. development
 
-Base of the recipe is ready for production. For development purpose setup check [Filament development setup](https://github.com/zeropsio/recipe-filament/tree/devenv)
+Base of the recipe is for development purpose. For production environment setup check [Filament development setup](https://github.com/zeropsio/recipe-filament/tree/main)
 
 [//]: # (- Use highly available version of the PostgreSQL database &#40;change `mode` from `NON_HA` to `HA` in recipe YAML, `db`)
 
