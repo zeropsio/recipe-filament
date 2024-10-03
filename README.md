@@ -62,9 +62,9 @@ took:
 
 - Add [zerops.yml](https://github.com/zeropsio/recipe-filament/blob/main/zerops.yml) to your repository, our
   example includes idempotent migrations, caching, and optimized build process
-- Setup health check if needed. Health checks are enabled out of the box in Laravel 11.
 - Add [league/flysystem-aws-s3-v3](https://github.com/zeropsio/recipe-filament/blob/main/composer.json#L23) to
   your composer.json to support Object Storage file system
+- Setup health check if needed. Health checks are enabled out of the box in Laravel 11.
 - Utilize
   Zerops [environment variables](https://github.com/zeropsio/recipe-filament/blob/main/zerops.yml#L22-L73)
   and [secrets](https://github.com/zeropsio/recipe-filament/blob/main/zerops-project-import.yml#L13-L14) to
