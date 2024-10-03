@@ -37,7 +37,7 @@ import dialog in the Zerops app.
 
 ## Production vs. development
 
-Base of the recipe is for development purpose. For production environment setup check [Filament development setup](https://github.com/zeropsio/recipe-filament/tree/main)
+Base of the recipe is for development purpose. For production environment setup check [Filament production setup](https://github.com/zeropsio/recipe-filament/tree/main)
 
 [//]: # (- Use highly available version of the PostgreSQL database &#40;change `mode` from `NON_HA` to `HA` in recipe YAML, `db`)
 
