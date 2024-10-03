@@ -8,7 +8,7 @@ project:
 services:
   - hostname: app
     type: php-nginx@8.3
-    buildFromGit: https://github.com/zeropsio/recipe-filament
+    buildFromGit: https://github.com/zeropsio/recipe-filament@devenv
     enableSubdomainAccess: true
     envSecrets:
       APP_KEY: <@generateRandomString(<32>)>
