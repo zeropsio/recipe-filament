@@ -17,7 +17,7 @@ zerops:
           path: /up
     run:
       base: php-nginx@8.3
-      os: ubuntu
+      os: alpine
       siteConfigPath: site.conf.tmpl
       envVariables:
         APP_NAME: ZeropsFilamentDevelopment
