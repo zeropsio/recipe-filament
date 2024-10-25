@@ -20,9 +20,7 @@ zerops:
       os: alpine
       siteConfigPath: site.conf.tmpl
       envVariables:
-        APP_NAME: ZeropsFilamentProduction
-        APP_DEBUG: false
-        APP_ENV: production
+        APP_NAME: "Filament X Zerops"
         APP_LOCALE: en
         APP_FAKER_LOCALE: en_US
         APP_FALLBACK_LOCALE: en
@@ -43,7 +41,7 @@ zerops:
         LOG_STACK: single
 
         MAIL_FROM_ADDRESS: hello@example.com
-        MAIL_FROM_NAME: ZeropsLaravel
+        MAIL_FROM_NAME: FilamentZerops
         MAIL_HOST: mailpit
         MAIL_MAILER: smtp
         MAIL_PORT: 1025
