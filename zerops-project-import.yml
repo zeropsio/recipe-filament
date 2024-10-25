@@ -3,7 +3,7 @@ project:
   name: recipe-filament
   tags:
     - zerops-recipe
-    - production
+    - development
 
 services:
   - hostname: app
@@ -17,16 +17,33 @@ services:
 
   - hostname: db
     type: postgresql@16
-    mode: HA
+    mode: NON_HA
     priority: 10
 
   - hostname: redis
     type: keydb@6
-    mode: HA
+    mode: NON_HA
     priority: 10
+
+  - hostname: mailpit
+    type: go@1
+    buildFromGit: https://github.com/zeropsio/recipe-mailpit@alpha
+    enableSubdomainAccess: true
+
+  - hostname: adminer
+    type: php-apache@8.3
+    buildFromGit: https://github.com/zeropsio/recipe-adminer@main
+    enableSubdomainAccess: true
 
   - hostname: storage
     type: object-storage
     objectStorageSize: 2
     objectStoragePolicy: public-read
     priority: 10
+
+  - hostname: s3browser
+    type: php-nginx@8.3
+    buildFromGit: https://github.com/zeropsio/s3browser
+    enableSubdomainAccess: true
+    envSecrets:
+      APP_KEY: <@generateRandomString(<32>)>
