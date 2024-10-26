@@ -3,13 +3,13 @@
 This repository demonstrates how to set up and deploy Filament applications using Zerops for both development and
 production environments.
 
-[Filament](https://filamentphp.com) is a collection of beautiful full-stack components. This recipe showcases how to run
-a Filament application on Zerops, including all advanced functionalities, with sessions and cache stored in Redis and
-files stored in Object Storage, making it suitable for production of any size.
-
 ![FilamentZerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-filament.svg)
 
 <br/>
+
+[Filament](https://filamentphp.com) is a collection of beautiful full-stack components. This recipe showcases how to run
+a Filament application on Zerops, including all advanced functionalities, with sessions and cache stored in Redis and
+files stored in Object Storage, making it suitable for production of any size.
 
 ## Deploy on Zerops
 
