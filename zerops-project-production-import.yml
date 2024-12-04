@@ -1,34 +1,31 @@
 #yamlPreprocessor=on
   project:
-    name: filament-devel
+    name: filament-prod
+    corePackage: SERIOUS
     tags:
       - zerops-recipe
-      - development
+      - production
 
   services:
     - hostname: app
       type: php-nginx@8.3
       buildFromGit: https://github.com/zeropsio/recipe-filament
       enableSubdomainAccess: true
+      minContainers: 2
       envSecrets:
         APP_KEY: <@generateRandomString(<32>)>
-        APP_DEBUG: true
-        APP_ENV: development
+        APP_DEBUG: false
+        APP_ENV: production
 
     - hostname: db
       type: postgresql@16
-      mode: NON_HA
+      mode: HA
       priority: 10
 
     - hostname: redis
       type: valkey@7.2
-      mode: NON_HA
+      mode: HA
       priority: 10
-
-    - hostname: mailpit
-      type: go@1
-      buildFromGit: https://github.com/zeropsio/recipe-mailpit
-      enableSubdomainAccess: true
 
     - hostname: storage
       type: object-storage
