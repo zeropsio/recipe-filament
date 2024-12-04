@@ -33,8 +33,6 @@ import dialog in the Zerops app.
 - Utilization of Zerops readiness check for proper **Zero downtime deployment**
 - Utilization of Zerops health check for advanced **app monitoring**
 - [Mailpit](https://github.com/axllent/mailpit) as **SMTP mock server**
-- [Adminer](https://www.adminer.org) for **quick database management** tool
-- [S3browser](https://github.com/zeropsio/s3browser) for quick **S3 storage browsing** and testing
 
 <br/>
 
@@ -45,7 +43,6 @@ import dialog in the Zerops app.
 This setup includes tools and configurations for a rapid development cycle:
 
 - Mailpit as the SMTP mock server
-- Adminer for quick database management
 - Fully commented-out configurations that you can easily switch to production settings
 
 ### Production Setup
@@ -56,7 +53,6 @@ For a production-ready environment, consider the following modifications:
 - Use at least two containers for the Filament service to achieve high reliability and resilience by adding
   `minContainers: 2` in the recipe YAML.
 - Use a production-ready third-party SMTP server instead of Mailpit.
-- Disable public access to Adminer or remove it altogether from the recipe YAML.
 
 You can see a production example setup at [`zerops-project-import-production.yml`](https://github.com/zeropsio/recipe-filament/blob/main/zerops-project-import-production.yml).
 
