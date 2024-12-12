@@ -54,7 +54,7 @@ For a production-ready environment, consider the following modifications:
   `minContainers: 2` in the recipe YAML.
 - Use a production-ready third-party SMTP server instead of Mailpit.
 
-You can see a production example setup at [`zerops-project-import-production.yml`](https://github.com/zeropsio/recipe-filament/blob/main/zerops-project-production-import.yml).
+You can see a production example setup at [`zerops-project-production-import.yml`](https://github.com/zeropsio/recipe-filament/blob/main/zerops-project-production-import.yml).
 
 ## Changes Made Over the Default Installation
 
