@@ -17,7 +17,7 @@ You can either click the deploy button to deploy development setup directly on Z
 the [import yaml](https://github.com/zeropsio/recipe-filament/blob/main/zerops-project-import.yml) to the
 import dialog in the Zerops app.
 
-[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/laravel)
+[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/filament-local)
 
 <br/>
 
